@@ -133,9 +133,37 @@ y = [4,6,5]
 plt.plot(x,y)
 plt.show()
 """
+"""
 x = np.arange(0.0, 2.0, 0.01)
-y = np.sin(2.0*np.pi*x)
-plt.plot(x,y)
+y1 = np.sin(2.0*np.pi*x)
+plt.plot(x,y1,'r:', linewidth=6)
+plt.xlabel('t[s]')
+plt.ylabel('x[m]')
+plt.title('Wykres x = y1(t)')
+plt.grid(True)
 plt.show()
+"""
+"""
+x = np.arange(0.0, 2.0, 0.01)
+y1 = np.sin(2.0*np.pi*x)
+y2 = np.sin(2.0*np.pi*x) + 0.5
+plt.plot(x,y1,'r:',x,y2, linewidth=6)
+plt.xlabel('t[s]')
+plt.ylabel('x[m]')
+plt.title('Wykres x = y1(t), x = y2(t)')
+plt.grid(True)
+plt.show()
+"""
 
+x = np.arange(0.0, 2.0, 0.01)
+y1 = np.sin(2.0*np.pi*x)
+y2 = np.sin(3.0*np.pi*x)
+y = y1*y2-0.5
 
+l1,l2,l3 = plt.plot(x,y,'g',x,y1,'r',x,y2,'b',linewidth=3)
+plt.legend([l1,l2,l3],('y','y1','y2'))
+plt.xlabel('t[s]')
+plt.ylabel('x[m]')
+plt.title('Wykres x = y1(t), x = y2(t)')
+plt.grid(True)
+plt.show()
