@@ -154,7 +154,7 @@ plt.title('Wykres x = y1(t), x = y2(t)')
 plt.grid(True)
 plt.show()
 """
-
+"""
 x = np.arange(0.0, 2.0, 0.01)
 y1 = np.sin(2.0*np.pi*x)
 y2 = np.sin(3.0*np.pi*x)
@@ -167,3 +167,4 @@ plt.ylabel('x[m]')
 plt.title('Wykres x = y1(t), x = y2(t)')
 plt.grid(True)
 plt.show()
+"""
